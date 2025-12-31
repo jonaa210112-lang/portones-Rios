@@ -10,8 +10,8 @@
 }
 
 .hero-logo {
-  width: 500px;        /* Logo grande en PC */
-  max-width: 95%;      /* Nunca exceda el ancho de la pantalla */
+  width: 500px;
+  max-width: 95%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -43,13 +43,8 @@
   font-size: 1rem;
 }
 
-.hero-text .btn-ws {
-  background-color: #25D366;
-}
-
-.hero-text .btn-call {
-  background-color: #007BFF;
-}
+.hero-text .btn-ws { background-color: #25D366; }
+.hero-text .btn-call { background-color: #007BFF; }
 
 /* -------------------- Video de portón -------------------- */
 .video-container {
@@ -68,7 +63,7 @@
 
 /* -------------------- Banner destacado -------------------- */
 .info-banner {
-  background-color: #FFEB3B; 
+  background-color: #FFEB3B;
   color: #333;
   font-size: 1.2rem;
   font-weight: bold;
@@ -97,40 +92,18 @@
 }
 
 /* -------------------- Imagenes responsivas -------------------- */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+img { max-width: 100%; height: auto; display: block; }
 
-/* -------------------- Responsivo -------------------- */
+/* -------------------- Grid responsive -------------------- */
+.grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+
+/* -------------------- Media queries -------------------- */
 @media screen and (max-width: 768px) {
-  .hero-logo {
-    width: 300px;
-    margin-bottom: 15px;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .hero-text .btn-ws, .hero-text .btn-call {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .video-porton {
-    width: 95%;
-  }
-
-  .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+  .hero-logo { width: 300px; margin-bottom: 15px; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-text p { font-size: 1rem; }
+  .hero-text .btn-ws, .hero-text .btn-call { width: 100%; font-size: 1rem; }
+  .video-porton { width: 95%; }
+  .grid { flex-direction: column; gap: 15px; }
 }
 
